@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Сайт з продажу металевих труб. Профільні та круглі труби в наявності. Мінімальне замовлення від 1 метра труби.">
+        <title>МеталПайп</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header">
+                <div class="logo">
+                    <img src="./assets/logo.svg" alt="LOGO">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#benefits">Переваги</a></li>
+                        <li><a href="#menu">Асортимент</a></li>
+                        <li><a href="#calculator">Калькулятор ціни</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="hero-banner">
+                <h1>Найкращі металеві труби</h1>
+                <p>Для підприємтсв та малого будівництва</p>
+                <img src="./assets/hero_pipe.png" alt="Metal pipe">
+                <div class="divider">
+                    <p>1 000 000 метрів металевих труб вже доставлено покупцям!</p>
+                    <div class="pipe-button">
+                        <button>Замовити трубу</button>
+                    </div>
+                    <img src="./assets/pipe-divider.svg" alt="Pipe divider">
+                </div>
+            </section>
+            <section id="benefits">
+                <h2>Замовляючи у нас ви отримуєте</h2>
+                <div class="benefit-tile">
+                    <p>Якісні матеріали</p>
+                    <img src="./assets/metal_sheet.png" alt="Metal sheet">
+                </div> 
+                <div class="benefit-tile">
+                    <p>Великий каталог</p>
+                    <img src="./assets/warehouse.png" alt="Warehouse">
+                </div> 
+                <div class="benefit-tile">
+                    <p>Людяна підтримка</p>
+                    <img src="./assets/support.png" alt="Support">
+                </div> 
+            </section>
+            <section id="menu">
+                <h2>Асортимент</h2>
+                <div class="carousel">
+                    <div class="carousel-content">
+                        <div class="carousel-item">
+                            <img src="./assets/pipe_round.png" alt="round pipe">
+                            <p>108x4</p>
+                            <p>Труба кругла</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/pipe_square.png" alt="square pipe">
+                            <p>219x6</p>
+                            <p>Труба профільна</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/pipe_square_full.png" alt="square full pipe">
+                            <p>57x3,5</p>
+                            <p>Квадрат</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/pipe_round_full.png" alt="round full pipe">
+                            <p>88x2</p>
+                            <p>Круг</p>
+                        </div>
+                    </div>
+                    <div class="carousel-navigation">
+                        <div class="carousel-button">
+                            <button>
+                                <img src="./assets/button.svg" alt="button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="calculator">
+                <h2>Калькулятор ціни</h2>
+                <div class="calculator">
+                    <table>
+                        <tr>
+                            <th>Модель труби</th>
+                            <th>Розмір</th>
+                            <th>Довжина</th>
+                            <th>Кількість</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="pipeType" aria-label="Модель труби">
+                                    <option value="pipe-round">Труба кругла</option>
+                                    <option value="pipe-square">Труба профільна</option>
+                                    <option value="circle">Круг</option>
+                                    <option value="square">Квадрат</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="size" aria-label="Розмір">
+                                    <option value="44x4">44x4</option>
+                                    <option value="48x6">48x6</option>
+                                    <option value="82x7">82x7</option>
+                                    <option value="104x8">104x8</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input aria-label="Довжина" type="number" name="length" min="1" value="1" step="0.1">
+                            </td>
+                            <td>
+                                <input aria-label="Кількість" type="number" name="amount" min="1" value="1">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="calculator-price">
+                    <p>Вартість: </p>
+                </div>
+                <div class="divider">
+                    <div class="pipe-button">
+                        <button>Замовити трубу</button>
+                    </div>
+                    <img src="./assets/pipe-divider.svg" alt="Pipe divider">
+                </div>
+            </section>
+            <footer id="footer">
+                <div>
+                    <img src="./assets/logo_footer.svg" alt="METALPIPE">
+                </div>
+                <div>
+                    <h3>Адреса</h3>
+                    <p>вул. Здолбунівська, 6, Київ, Україна, 02081</p>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>тел. 0 800 303 370
+                        ел. пошта: metalpipe@ukr.net</p>
+                </div>
+                <div>
+                    <h3>Підписатися на розсилку</h3>
+                    <p>samplemail@mail.com</p>
+                    <button>
+                        <img src="./assets/button.svg" alt="button">
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
