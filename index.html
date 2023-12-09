@@ -4,150 +4,188 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Сайт з продажу металевих труб. Профільні та круглі труби в наявності. Мінімальне замовлення від 1 метра труби.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
         <title>МеталПайп</title>
     </head>
     <body>
         <div class="wrapper">
             <header id="header">
-                <div class="logo">
-                    <img src="./assets/logo.svg" alt="LOGO">
+                <div class="content">
+                    <div class="logo">
+                        <img src="./assets/logo.svg" alt="LOGO">
+                    </div>
+                    <div class="menu-toggle">&#9776;</div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#benefits">Переваги</a></li>
+                            <li><a href="#menu">Асортимент</a></li>
+                            <li><a href="#calculator">Калькулятор ціни</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#benefits">Переваги</a></li>
-                        <li><a href="#menu">Асортимент</a></li>
-                        <li><a href="#calculator">Калькулятор ціни</a></li>
-                    </ul>
-                </nav>
             </header>
             <section id="hero-banner">
-                <h1>Найкращі металеві труби</h1>
-                <p>Для підприємтсв та малого будівництва</p>
-                <img src="./assets/hero_pipe.png" alt="Metal pipe">
-                <div class="divider">
+                <div class="content">
+                    <div class="banner-heading">
+                        <h1>Найкращі металеві труби</h1>
+                        <p>Для підприємтсв та малого будівництва</p>
+                    </div>
+                    <div class="banner-image">
+                        <img src="./assets/hero_pipe.png" alt="Metal pipe">
+                    </div>
+                    <div class="break"></div>
                     <p>1 000 000 метрів металевих труб вже доставлено покупцям!</p>
+                </div>
+            </section>
+            <section class="divider">
+                <div class="content">
                     <div class="pipe-button">
+                        <div class="triangle"></div>
                         <button>Замовити трубу</button>
                     </div>
-                    <img src="./assets/pipe-divider.svg" alt="Pipe divider">
                 </div>
             </section>
             <section id="benefits">
-                <h2>Замовляючи у нас ви отримуєте</h2>
-                <div class="benefit-tile">
-                    <p>Якісні матеріали</p>
-                    <img src="./assets/metal_sheet.png" alt="Metal sheet">
-                </div> 
-                <div class="benefit-tile">
-                    <p>Великий каталог</p>
-                    <img src="./assets/warehouse.png" alt="Warehouse">
-                </div> 
-                <div class="benefit-tile">
-                    <p>Людяна підтримка</p>
-                    <img src="./assets/support.png" alt="Support">
-                </div> 
-            </section>
-            <section id="menu">
-                <h2>Асортимент</h2>
-                <div class="carousel">
-                    <div class="carousel-content">
-                        <div class="carousel-item">
-                            <img src="./assets/pipe_round.png" alt="round pipe">
-                            <p>108x4</p>
-                            <p>Труба кругла</p>
+                <div class="content">
+                    <h2>Замовляючи у нас ви отримуєте</h2>
+                    <div class="benefits-list">
+                        <div class="benefit-tile" id="first-tile">
+                            <p><span>Якісні <br> матеріали</span></p>
+                            <img src="./assets/metal_sheet.png" alt="Metal sheet">
+                            <div class="white-rectangle top-white-rectangle"></div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/pipe_square.png" alt="square pipe">
-                            <p>219x6</p>
-                            <p>Труба профільна</p>
+                        <div class="benefit-tile" id="second-tile">
+                            <div class="white-rectangle bottom-white-rectangle"></div>
+                            <p><span>Великий <br> каталог</span></p>
+                            <img src="./assets/warehouse.png" alt="Warehouse">
+                            <div class="white-rectangle top-white-rectangle"></div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/pipe_square_full.png" alt="square full pipe">
-                            <p>57x3,5</p>
-                            <p>Квадрат</p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/pipe_round_full.png" alt="round full pipe">
-                            <p>88x2</p>
-                            <p>Круг</p>
+                        <div class="benefit-tile" id="third-tile">
+                            <div class="white-rectangle bottom-white-rectangle"></div>
+                            <p><span>Людяна <br> підтримка</span></p>
+                            <img src="./assets/support.png" alt="Support">
                         </div>
                     </div>
-                    <div class="carousel-navigation">
-                        <div class="carousel-button">
-                            <button>
-                                <img src="./assets/button.svg" alt="button">
-                            </button>
+                </div>
+            </section>
+            <section id="menu">
+                <div class="content">
+                    <h2>Асортимент</h2>
+                    <div class="carousel">
+                        <div class="carousel-content">
+                            <div class="carousel-item">
+                                <img src="./assets/pipe_round.png" alt="round pipe">
+                                <p><span>108x4</span>   <br> <span>Труба кругла</span></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/pipe_square.png" alt="square pipe">
+                                <p><span>219x6</span> <br> <span>Труба профільна</span></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/pipe_square_full.png" alt="square full pipe">
+                                <p><span>57x3,5</span> <br> <span>Блок квадратний</span></p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/pipe_round_full.png" alt="round full pipe">
+                                <p><span>88x2</span> <br> <span>Блок круглий</span></p>
+                            </div>
+                        </div>
+                        <div class="carousel-navigation">
+                            <div class="carousel-button">
+                                <button class="arrow-button">
+                                    <img src="./assets/button.svg" alt="button">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="calculator">
-                <h2>Калькулятор ціни</h2>
-                <div class="calculator">
-                    <table>
-                        <tr>
-                            <th>Модель труби</th>
-                            <th>Розмір</th>
-                            <th>Довжина</th>
-                            <th>Кількість</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <select name="pipeType" aria-label="Модель труби">
-                                    <option value="pipe-round">Труба кругла</option>
-                                    <option value="pipe-square">Труба профільна</option>
-                                    <option value="circle">Круг</option>
-                                    <option value="square">Квадрат</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select name="size" aria-label="Розмір">
-                                    <option value="44x4">44x4</option>
-                                    <option value="48x6">48x6</option>
-                                    <option value="82x7">82x7</option>
-                                    <option value="104x8">104x8</option>
-                                </select>
-                            </td>
-                            <td>
-                                <input aria-label="Довжина" type="number" name="length" min="1" value="1" step="0.1">
-                            </td>
-                            <td>
-                                <input aria-label="Кількість" type="number" name="amount" min="1" value="1">
-                            </td>
-                        </tr>
-                    </table>
+                <div class="content">
+                    <h2>Калькулятор ціни</h2>
+                    <div class="calculator">
+                        <div class="calculator-element">
+                            <label for="type">Модель труби</label>
+                            <select name="pipeType" id="type" aria-label="Модель труби">
+                                <option value="pipe-round">Труба кругла</option>
+                                <option value="pipe-square">Труба профільна</option>
+                                <option value="circle">Блок круглий</option>
+                                <option value="square">Блок квадратний</option>
+                            </select>
+                        </div>
+                        <div class="calculator-element">
+                            <label for="size">Розмір</label>
+                            <select name="size" id="size" aria-label="Розмір">
+                                <option value="44x4">44x4</option>
+                                <option value="48x6">48x6</option>
+                                <option value="82x7">82x7</option>
+                                <option value="104x8">104x8</option>
+                            </select>
+                        </div>
+                        <div class="calculator-element">
+                            <label for="length">Довжина</label>
+                            <input aria-label="Довжина" id="length" type="number" name="length" min="1" value="1" step="0.1">
+                        </div>
+                        <div class="calculator-element">
+                            <label for="amount">Кількість</label>
+                            <input aria-label="Кількість" id="amount" type="number" name="amount" min="1" value="1">
+                        </div>
+                    </div>
+                    <div class="calculator-price">
+                        <p>Вартість: </p>
+                        <p><span>0</span> грн</p>
+                        <hr>
+                    </div>
                 </div>
-                <div class="calculator-price">
-                    <p>Вартість: </p>
-                </div>
-                <div class="divider">
+            </section>
+            <section class="divider">
+                <div class="content">
                     <div class="pipe-button">
+                        <div class="triangle"></div>
                         <button>Замовити трубу</button>
                     </div>
-                    <img src="./assets/pipe-divider.svg" alt="Pipe divider">
                 </div>
             </section>
             <footer id="footer">
-                <div>
-                    <img src="./assets/logo_footer.svg" alt="METALPIPE">
-                </div>
-                <div>
-                    <h3>Адреса</h3>
-                    <p>вул. Здолбунівська, 6, Київ, Україна, 02081</p>
-                </div>
-                <div>
-                    <h3>Контакти</h3>
-                    <p>тел. 0 800 303 370
-                        ел. пошта: metalpipe@ukr.net</p>
-                </div>
-                <div>
-                    <h3>Підписатися на розсилку</h3>
-                    <p>samplemail@mail.com</p>
-                    <button>
-                        <img src="./assets/button.svg" alt="button">
-                    </button>
+                <div class="content">
+                    <div class="footer-logo">
+                        <img src="./assets/logo_footer.svg" alt="METALPIPE">
+                    </div>
+                    <div class="address">
+                        <h3>Адреса</h3>
+                        <p>вул. Здолбунівська, 6, Київ, Україна, 02081</p>
+                    </div>
+                    <div class="contacts">
+                        <h3>Контакти</h3>
+                        <p>тел. 0 800 303 370 <br>
+                            ел. пошта: metalpipe@ukr.net</p>
+                    </div>
+                    <div class="subscribe">
+                        <h3>Підписатися</h3>
+                        <div class="subscribe-input">
+                            <input value="samplemail@mail.com">
+                            <button class="arrow-button">
+                                <img src="./assets/button.svg" alt="button">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>
     </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector("header");
+            const menuToggle = document.querySelector(".menu-toggle");
+            const mainNav = document.querySelector(".main-nav");
+            
+            menuToggle.addEventListener("click", function () {
+                mainNav.classList.toggle("show");
+                header.classList.toggle("unset");
+            });
+        });
+    </script>
 </html>
