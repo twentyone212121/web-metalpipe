@@ -95,7 +95,12 @@
                         </div>
                         <div class="carousel-navigation">
                             <div class="carousel-button">
-                                <button class="arrow-button">
+                                <button class="arrow-button back-arrow" onclick="prevSlide()">
+                                    <img src="./assets/button.svg" alt="button">
+                                </button>
+                            </div>
+                            <div class="carousel-button">
+                                <button class="arrow-button" onclick="nextSlide()">
                                     <img src="./assets/button.svg" alt="button">
                                 </button>
                             </div>
@@ -106,7 +111,7 @@
             <section id="calculator">
                 <div class="content">
                     <h2>Калькулятор ціни</h2>
-                    <div class="calculator">
+                    <div class="calculator" id="calculator-wrapper">
                         <div class="calculator-element">
                             <label for="type">Модель труби</label>
                             <select name="pipeType" id="type" aria-label="Модель труби">
@@ -136,7 +141,7 @@
                     </div>
                     <div class="calculator-price">
                         <p>Вартість: </p>
-                        <p><span>0</span> грн</p>
+                        <p><span id="price">150</span> грн</p>
                         <hr>
                     </div>
                 </div>
@@ -176,16 +181,5 @@
             </footer>
         </div>
     </body>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const header = document.querySelector("header");
-            const menuToggle = document.querySelector(".menu-toggle");
-            const mainNav = document.querySelector(".main-nav");
-            
-            menuToggle.addEventListener("click", function () {
-                mainNav.classList.toggle("show");
-                header.classList.toggle("unset");
-            });
-        });
-    </script>
+    <script src="src/script.js"></script>
 </html>

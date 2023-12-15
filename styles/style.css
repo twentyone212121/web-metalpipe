@@ -23,8 +23,14 @@ nav ul {
 
 nav ul li a {
     font-size: 20px;
+    line-height: 25px;
     color: white;
     text-decoration: none;
+    transition: 0.3s all ease-in-out;
+}
+
+nav ul li:hover a{
+    color: rgba(102, 102, 102, 1);
 }
 
 h1 {
@@ -327,6 +333,7 @@ input:focus, select:focus {
     height: 100%;
     width: 100%;
     border: 0;
+    transition: 0.5s all ease-in-out;
 }
 
 .pipe-button button::after {
@@ -338,6 +345,7 @@ input:focus, select:focus {
     border-top: 27px solid transparent;
     border-bottom: 27px solid transparent;
     border-left: 27px solid white;
+    transition: 0.5s all ease-in-out;
 }
 
 .pipe-button .triangle {
@@ -348,6 +356,20 @@ input:focus, select:focus {
     border-top: 27px solid transparent;
     border-bottom: 27px solid transparent;
     border-left: 27px solid black;
+    transition: 0.5s all ease-in-out;
+}
+
+.pipe-button:hover button{
+    background-color: white;
+    color: black;
+}
+
+.pipe-button:hover .triangle {
+    border-left-color: white;
+}
+
+.pipe-button:hover button::after {
+    border-left-color: black;
 }
 
 .break {
@@ -405,17 +427,20 @@ input:focus, select:focus {
 
 .carousel {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     position: relative;
 }
 
 .carousel-content {
     display: flex;
     gap: 40px ;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
     position: relative;
+    box-sizing: border-box;
+    flex: 0 0 auto;
 }
 
 .carousel-item img {
@@ -438,9 +463,11 @@ input:focus, select:focus {
 }
 
 .carousel-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     position: absolute;
     top: 50%;
-    right: 20px;
     transform: translateY(-50%);
 }
 
@@ -452,6 +479,10 @@ input:focus, select:focus {
 
 .arrow-button img {
     height: 45px;
+}
+
+.back-arrow {
+    transform: rotate(180deg);
 }
 
 @media (max-width: 1025px) {
@@ -473,7 +504,12 @@ input:focus, select:focus {
     .carousel-item p {
         font-size: 18px;
     }
+}
 
+@media (max-width: 480px) {
+    .carousel {
+        overflow-x: scroll;
+    }
     .carousel-navigation {
         display: none;
     }
